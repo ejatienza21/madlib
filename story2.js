@@ -1,0 +1,68 @@
+var questions = 15;
+var questionsLeft = ' [' + questions + ' questions left]';
+var verb = prompt('Please type a verb' + questionsLeft);
+questions -= 1;
+questionsLeft = ' [' + questions + ' questions left]';
+var sea = prompt('Please type a sea creature ' + questionsLeft);
+questions -= 1;
+questionsLeft = ' [' + questions + ' questions left]';
+var adj = prompt('Please type an adjective' + questionsLeft);
+questions -= 1;
+questionsLeft = ' [' + questions + ' questions left]';
+var room = prompt('Please type any room inside a house ' + questionsLeft);
+questions -= 1;
+questionsLeft = ' [' + questions + ' questions left]';
+var emotion = prompt('Please type a negative emotion ' + questionsLeft);
+questions -= 1;
+questionsLeft = ' [' + questions + ' questions left]';
+var noun1= prompt('Please type a noun ' + questionsLeft);
+questions -= 1;
+questionsLeft = ' [' + questions + ' questions left]';
+var noun2 = prompt('Please type a noun again ' + questionsLeft);
+questions -= 1;
+questionsLeft = ' [' + questions + ' questions left]';
+var food = prompt('Please type a food ' + questionsLeft);
+questions -= 1;
+questionsLeft = ' [' + questions + ' questions left]';
+var drink = prompt('Please type a beverage' + questionsLeft);
+questions -= 1;
+questionsLeft = ' [' + questions + ' questions left]';
+var time = prompt('Please type the amount of time you were in a relationship last time in years, months and days if possible' + questionsLeft);
+questions -= 1;
+questionsLeft = ' [' + questions + ' questions left]';
+var noun3 = prompt('Please type the thing you hate most' + questionsLeft);
+questions -= 1;
+questionsLeft = ' [' + questions + ' questions left]';
+var part1 = prompt('Please type your favorite body part' + questionsLeft);
+questions -= 1;
+questionsLeft = ' [' + questions + ' questions left]';
+var part2 = prompt('Please type your 2nd favorite body part' + questionsLeft);
+questions -= 1;
+questionsLeft = ' [' + questions + ' questions left]';
+var part3 = prompt('Please type your least favorite body part' + questionsLeft);
+questions -= 1;
+questionsLeft = ' [' + questions + ' questions left]';
+var age = prompt('Please type the age of your mother' + questionsLeft);
+questions -= 1;
+questionsLeft = ' [' + questions + ' questions left]';
+
+
+alert('All done. Ready for the message?');
+
+var sentence = "<h2>" +   ' I felt like I could'  + verb +  ' once again. The open air made me feel as if I were a ' + sea + ' back in water after being on land for a long time.';
+sentence+= 'I could feel the sun warming my ' + adj + ' face.';
+sentence+= ' The brightness was overwhelming compared to my old, dark, damp ' + room + ' .';
+sentence+= ' It was hard to describe the ' + emotion + ' that flowed through my body as I saw ' + noun1 + ' and young ' + noun2 + ' once more.';
+sentence+= ' I could smell the aroma of hot ' + food + ' and ' + drink + ' instead of the horrible stench of leftover food from last night.';
+sentence+= ' I could hear the buzz of people talking and giggling of happy mothers. This was a great improvement to the ‘drip, drip, drip’ of my broken tap that I fell asleep to each night on the cold, hard concrete ‘bed’ I was allocated.';
+sentence+= '</h2></br>';
+
+sentence+= '<h2> I was greeted with the love and affection of my family that I had not seen for the last ' + time + ' I was locked up. ';
+sentence+= ' It was a definite thing that I would not miss the aggression and anger that the people in there live off from. People full of ' + noun3 + ' .';
+sentence+= '</h2></br>';
+
+sentence+= "<h2>" + 'I felt my mother’s soft, but slightly cracked ' + part1 + ' press against my rough ' + part2 + ' . I held her tightly and sensed a tear fall from her eye and onto my clothes near my ' + part3;
+sentence+= ' I was greeted with warm hugs and wet kisses but the one thing that lingered in the back of my mind through all of this was my father.';
+sentence+= ' After all this time, he had not come to forgive me, but instead, he had disowned me and loathed my existence. I guess I could not change any of this but I was just thankful that my mother, through my whole' + age + ' years of living, stuck with me, through thick and thin and was glad to welcome me back home. ';
+sentence+= '</h2></br>';
+document.write(sentence);
